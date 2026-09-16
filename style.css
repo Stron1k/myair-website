@@ -3452,3 +3452,18 @@ html[lang="ru"] .hero h1 {
     color: #8fa4aa;
 }
 
+/* =========================
+   ACCESSIBILITY — FINAL v1.2
+   Desktop contrast fixes reported by Lighthouse
+========================= */
+
+/* Logo subtitle: darker gray on white header */
+.logo-description {
+    color: #4f6268;
+}
+
+/* Small MYAIR label inside the hero message card */
+.hero-message-small {
+    color: #08798c;
+}
+
