@@ -3430,3 +3430,25 @@ html[lang="ru"] .hero h1 {
         font-size: 31px;
     }
 }
+
+/* =========================
+   ACCESSIBILITY — FINAL v1.1
+   Improved text contrast without changing layout
+========================= */
+
+/* Inactive language switch: stronger contrast on the pale header control */
+.language {
+    color: #52666c;
+}
+
+/* Primary CTA: slightly darker teal keeps white text above WCAG AA contrast */
+.primary-button {
+    background: #08798c;
+}
+
+/* Footer copyright and contact links: improve readability on dark background */
+.footer-bottom p,
+.footer-contact-links a {
+    color: #8fa4aa;
+}
+
