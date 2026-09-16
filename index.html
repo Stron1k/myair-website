@@ -28,6 +28,11 @@
         content="#0c8599"
     >
 
+    <link
+        rel="canonical"
+        href="https://stron1k.github.io/myair-website/"
+    >
+
 
     <!-- OPEN GRAPH -->
 
@@ -44,6 +49,37 @@
     <meta
         property="og:description"
         content="Profesionāli ventilācijas un rekuperācijas risinājumi privātmājām, dzīvokļiem un uzņēmumiem visā Latvijā."
+    >
+
+
+    <meta
+        property="og:url"
+        content="https://stron1k.github.io/myair-website/"
+    >
+
+    <meta
+        property="og:image"
+        content="https://stron1k.github.io/myair-website/og-image.png"
+    >
+
+    <meta
+        property="og:image:width"
+        content="1536"
+    >
+
+    <meta
+        property="og:image:height"
+        content="1024"
+    >
+
+    <meta
+        property="og:image:type"
+        content="image/png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="MyAir — profesionāla ventilācija un rekuperācija Latvijā"
     >
 
     <meta
@@ -68,8 +104,8 @@
         "name": "SIA MyAir",
         "url": "https://stron1k.github.io/myair-website/",
         "image": "https://stron1k.github.io/myair-website/og-image.png",
-        "telephone": "+37120005780",
-        "email": "nekich1000@gmail.com",
+        "telephone": "+37127132322",
+        "email": "sia.myair@gmail.com",
         "description": "Profesionāli ventilācijas un rekuperācijas risinājumi privātmājām, dzīvokļiem un uzņēmumiem visā Latvijā.",
         "address": {
             "@type": "PostalAddress",
@@ -103,7 +139,7 @@
 
 </head>
 
-<body>
+<body class="site-body">
 
     <!-- HEADER -->
 
@@ -283,9 +319,29 @@
 
         <section class="hero">
 
+            <div class="hero-photo" aria-hidden="true">
+                <img
+                    src="images/hero-family.webp"
+                                width="1800"
+                                height="1200"
+                    alt=""
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                >
+            </div>
+
+            <div class="hero-photo-shade" aria-hidden="true"></div>
+
+            <div class="hero-air-lines" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <div class="container hero-content">
 
-                <div class="hero-text">
+                <div class="hero-text reveal reveal-left">
 
                     <div
                         class="hero-label"
@@ -309,7 +365,6 @@
                         vairāk nekā 10 gadu pieredze.
                     </p>
 
-
                     <div class="hero-buttons">
 
                         <a
@@ -330,74 +385,42 @@
 
                     </div>
 
-
                     <div class="hero-benefits">
 
                         <div class="benefit">
-
-                            <strong>
-                                10+
-                            </strong>
-
+                            <strong>10+</strong>
                             <span data-i18n="benefit-experience">
                                 gadu pieredze
                             </span>
-
                         </div>
 
-
                         <div class="benefit">
-
-                            <strong>
-                                LV
-                            </strong>
-
+                            <strong>LV</strong>
                             <span data-i18n="benefit-latvia">
                                 darbojamies visā Latvijā
                             </span>
-
                         </div>
 
-
                         <div class="benefit">
-
-                            <strong>
-                                ✓
-                            </strong>
-
+                            <strong>✓</strong>
                             <span data-i18n="benefit-solutions">
                                 individuāli risinājumi
                             </span>
-
                         </div>
 
                     </div>
 
                 </div>
 
-
-                <div class="hero-card">
-
-                    <div class="hero-card-icon">
-                        ↗
-                    </div>
-
-                    <h2 data-i18n="hero-card-title">
+                <div
+                    class="hero-message reveal reveal-right"
+                    aria-hidden="true"
+                >
+                    <span class="hero-message-small">MyAir</span>
+                    <strong data-i18n="hero-card-title">
                         Gaiss, par kuru nav jādomā
-                    </h2>
-
-                    <p data-i18n="hero-card-description">
-                        Pareizi izbūvēta ventilācijas sistēma nodrošina
-                        svaigu gaisu, palīdz kontrolēt mitrumu un rada
-                        patīkamu mikroklimatu telpās.
-                    </p>
-
-                    <div class="hero-card-line"></div>
-
-                    <span data-i18n="hero-card-bottom">
-                        MyAir — no konsultācijas līdz gatavai sistēmai.
-                    </span>
-
+                    </strong>
+                    <span class="hero-message-line"></span>
                 </div>
 
             </div>
@@ -414,7 +437,7 @@
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-heading reveal">
 
                     <div
                         class="section-label"
@@ -437,7 +460,7 @@
                 </div>
 
 
-                <div class="services-grid">
+                <div class="services-grid reveal">
 
                     <article class="service-card">
 
@@ -528,7 +551,7 @@
                 </div>
 
 
-                <div class="services-bottom">
+                <div class="services-bottom reveal">
 
                     <p data-i18n="services-question">
                         Nezināt, kāds risinājums nepieciešams tieši Jūsu objektam?
@@ -557,7 +580,7 @@
 
             <div class="container advantages-content">
 
-                <div class="advantages-left">
+                <div class="advantages-left reveal reveal-left">
 
                     <div
                         class="section-label"
@@ -607,7 +630,7 @@
                 </div>
 
 
-                <div class="advantages-grid">
+                <div class="advantages-grid reveal reveal-right">
 
                     <div class="advantage-card">
 
@@ -687,6 +710,88 @@
         </section>
 
 
+
+        <!-- BRANDS -->
+
+        <section class="brands" id="brands">
+
+            <div class="container">
+
+                <div class="brands-heading reveal">
+
+                    <div
+                        class="section-label"
+                        data-i18n="brands-label"
+                    >
+                        Mūsu sadarbības partneri
+                    </div>
+
+                    <div class="brands-heading-row">
+
+                        <h2 data-i18n="brands-title">
+                            Zīmoli, ar kuriem <span>strādājam</span>
+                        </h2>
+
+                        <p data-i18n="brands-description">
+                            Ikdienas darbā izmantojam uzticamu ražotāju
+                            ventilācijas un rekuperācijas risinājumus.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="brands-strip reveal">
+
+                    <a
+                        href="https://tenko.lt/"
+                        class="brand-item brand-tenko"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Tenko Baltic"
+                    >
+                        <span class="brand-wordmark">TENKO</span>
+                        <small>BALTIC</small>
+                    </a>
+
+                    <a
+                        href="https://www.komfovent.com/"
+                        class="brand-item brand-komfovent"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Komfovent"
+                    >
+                        <span class="brand-wordmark">komfovent</span>
+                    </a>
+
+                    <a
+                        href="https://www.brinkclimatesystems.nl/"
+                        class="brand-item brand-brink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Brink"
+                    >
+                        <span class="brand-wordmark">BRINK</span>
+                    </a>
+
+                    <a
+                        href="https://www.ubbink.com/int/"
+                        class="brand-item brand-ubbink"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ubbink"
+                    >
+                        <span class="brand-ubbink-mark" aria-hidden="true"></span>
+                        <span class="brand-wordmark">ubbink</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
         <!-- WORKS -->
 
         <section
@@ -696,7 +801,7 @@
 
             <div class="container">
 
-                <div class="works-heading">
+                <div class="works-heading reveal">
 
                     <div>
 
@@ -722,7 +827,7 @@
                 </div>
 
 
-                <div class="works-grid">
+                <div class="works-grid reveal">
 
                     <article class="work-card work-tall">
 
@@ -730,6 +835,8 @@
 
                             <img
                                 src="images/work-1.jpg"
+                                width="1280"
+                                height="960"
                                 alt="Gaisa vadu sistēmas izbūve"
                                 data-i18n-alt="work-1-alt"
                                 loading="lazy"
@@ -759,6 +866,8 @@
 
                             <img
                                 src="images/work-2.jpg"
+                                width="960"
+                                height="1280"
                                 alt="Rekuperācijas sistēmas montāža"
                                 data-i18n-alt="work-2-alt"
                                 loading="lazy"
@@ -788,6 +897,8 @@
 
                             <img
                                 src="images/work-3.jpg"
+                                width="960"
+                                height="1280"
                                 alt="Ventilācijas izvadi privātmājai"
                                 data-i18n-alt="work-3-alt"
                                 loading="lazy"
@@ -817,6 +928,8 @@
 
                             <img
                                 src="images/work-4.jpg"
+                                width="1280"
+                                height="960"
                                 alt="Rekuperācijas iekārtas uzstādīšana"
                                 data-i18n-alt="work-4-alt"
                                 loading="lazy"
@@ -846,6 +959,8 @@
 
                             <img
                                 src="images/work-5.jpg"
+                                width="1280"
+                                height="960"
                                 alt="Ventilācijas sistēmas ārējie izvadi"
                                 data-i18n-alt="work-5-alt"
                                 loading="lazy"
@@ -884,7 +999,7 @@
 
             <div class="container contacts-content">
 
-                <div class="contacts-main">
+                <div class="contacts-main reveal reveal-left">
 
                     <div
                         class="contact-label"
@@ -911,15 +1026,15 @@
                     <div class="contact-buttons">
 
                         <a
-                            href="tel:+37120005780"
+                            href="tel:+37127132322"
                             class="contact-primary"
                             data-i18n="contacts-call"
                         >
-                            Zvanīt +371 20005780
+                            Zvanīt +371 27132322
                         </a>
 
                         <a
-                            href="https://wa.me/37120005780"
+                            href="https://wa.me/37127132322"
                             class="contact-secondary"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -932,12 +1047,14 @@
                 </div>
 
 
-                <div class="contact-card">
+                <div class="contact-card reveal reveal-right">
 
                     <div class="contact-card-row">
 
                         <div class="contact-card-icon">
-                            01
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M7.2 3.5 9.5 8c.3.6.1 1.3-.4 1.7l-1.6 1.2c1.1 2.3 3 4.2 5.3 5.3l1.2-1.6c.4-.5 1.1-.7 1.7-.4l4.5 2.3c.6.3.9 1 .7 1.6l-.5 2c-.2.8-.9 1.4-1.7 1.4C10 21.5 2.5 14 2.5 5.3c0-.8.6-1.5 1.4-1.7l2-.5c.6-.2 1.3.1 1.6.7Z"/>
+                            </svg>
                         </div>
 
                         <div>
@@ -946,8 +1063,8 @@
                                 Tālrunis
                             </span>
 
-                            <a href="tel:+37120005780">
-                                +371 20005780
+                            <a href="tel:+37127132322">
+                                +371 27132322
                             </a>
 
                         </div>
@@ -961,7 +1078,9 @@
                     <div class="contact-card-row">
 
                         <div class="contact-card-icon">
-                            02
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4.5 5.5h15A2.5 2.5 0 0 1 22 8v8a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 16V8a2.5 2.5 0 0 1 2.5-2.5Zm0 2 7.5 5.3 7.5-5.3"/>
+                            </svg>
                         </div>
 
                         <div>
@@ -970,8 +1089,8 @@
                                 E-pasts
                             </span>
 
-                            <a href="mailto:nekich1000@gmail.com">
-                                nekich1000@gmail.com
+                            <a href="mailto:sia.myair@gmail.com">
+                                sia.myair@gmail.com
                             </a>
 
                         </div>
@@ -985,7 +1104,10 @@
                     <div class="contact-card-row">
 
                         <div class="contact-card-icon">
-                            03
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Z"/>
+                                <circle cx="12" cy="10" r="2.2"/>
+                            </svg>
                         </div>
 
                         <div>
@@ -1138,12 +1260,12 @@
 
                 <div class="footer-contact-links">
 
-                    <a href="tel:+37120005780">
-                        +371 20005780
+                    <a href="tel:+37127132322">
+                        +371 27132322
                     </a>
 
-                    <a href="mailto:nekich1000@gmail.com">
-                        nekich1000@gmail.com
+                    <a href="mailto:sia.myair@gmail.com">
+                        sia.myair@gmail.com
                     </a>
 
                 </div>

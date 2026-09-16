@@ -2,7 +2,7 @@ const translations = {
 
     lv: {
 
-        pageTitle: "MyAir | Ventilācija un rekuperācija",
+        pageTitle: "MyAir | Ventilācija un rekuperācija Latvijā",
 
         "logo-description": "Ventilācija • Rekuperācija",
 
@@ -135,6 +135,9 @@ const translations = {
             "Realizējam ventilācijas projektus Rīgā un citviet Latvijā privātiem un biznesa klientiem.",
 
 
+        "brands-label": "Mūsu sadarbības partneri",
+        "brands-title": "Zīmoli, ar kuriem <span>strādājam</span>",
+        "brands-description": "Ikdienas darbā izmantojam uzticamu ražotāju ventilācijas un rekuperācijas risinājumus.",
         "works-label":
             "Mūsu darbi",
 
@@ -180,7 +183,7 @@ const translations = {
             "Pastāstiet mums par savu objektu un nepieciešamo risinājumu. Palīdzēsim saprast piemērotāko variantu un vienosimies par nākamajiem soļiem.",
 
         "contacts-call":
-            "Zvanīt +371 20005780",
+            "Zvanīt +371 27132322",
 
         "contact-phone":
             "Tālrunis",
@@ -220,7 +223,7 @@ const translations = {
 
     ru: {
 
-        pageTitle: "MyAir | Вентиляция и рекуперация",
+        pageTitle: "MyAir | Вентиляция и рекуперация в Латвии",
 
         "logo-description": "Вентиляция • Рекуперация",
 
@@ -365,6 +368,9 @@ const translations = {
             "Реализуем вентиляционные проекты в Риге и по всей Латвии для частных и бизнес-клиентов.",
 
 
+        "brands-label": "Наши партнёры",
+        "brands-title": "Бренды, с которыми <span>мы работаем</span>",
+        "brands-description": "В работе используем надёжные решения производителей вентиляционного и рекуперационного оборудования.",
         "works-label":
             "Наши работы",
 
@@ -439,7 +445,7 @@ const translations = {
             "Расскажите нам о вашем объекте и необходимом решении. Мы поможем подобрать подходящий вариант и договоримся о дальнейших шагах.",
 
         "contacts-call":
-            "Позвонить +371 20005780",
+            "Позвонить +371 27132322",
 
         "contact-phone":
             "Телефон",
@@ -740,3 +746,65 @@ if (savedLanguage === "ru") {
     changeLanguage("lv");
 
 }
+
+
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+const prefersReducedMotion =
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (prefersReducedMotion) {
+
+    revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+    });
+
+} else {
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries, observer) => {
+
+                entries.forEach((entry) => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("is-visible");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12,
+                rootMargin: "0px 0px -40px 0px"
+            }
+        );
+
+
+    revealElements.forEach((element) => {
+        revealObserver.observe(element);
+    });
+
+}
+
+
+/* Show the hero immediately */
+
+document
+    .querySelectorAll(".hero .reveal")
+    .forEach((element) => {
+
+        requestAnimationFrame(() => {
+            element.classList.add("is-visible");
+        });
+
+    });
